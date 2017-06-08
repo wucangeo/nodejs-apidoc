@@ -1,0 +1,20 @@
+[{
+    "name": "核心类",
+    "list": [
+        "./api/Map.js",
+        "./api/RGBAColor.js"
+    ]
+}, {
+    "name": "符号类",
+    "list": [{
+        "name": "点符号",
+        "list": [
+            "./api/Map.js"
+        ]
+    }, {
+        "name": "点符号",
+        "list": [
+            "./api/RGBAColor.js"
+        ]
+    }]
+}]
