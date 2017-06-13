@@ -13,7 +13,6 @@ let handleOne = (file) => {
         for (let i = 0; i < len; i++) {
             let line = arr[i];
 
-            //回调
             if (!line) {
                 continue;
             }
@@ -38,6 +37,10 @@ let handleOne = (file) => {
                         label = lendsArr[i];
                         break;
                     }
+                }
+                //去除prototype
+                if (label && label.indexOf(".prototype") >= 0) {
+                    label = label.replace(".prototype", "");
                 }
                 obj = {
                     label: label,
