@@ -115,7 +115,9 @@ let handleSegment = (config) => {
             }
         } else {
             let obj = handleOne(seg);
-            segs.push(obj);
+            if (obj) {
+                segs.push(obj);
+            }
         }
     }, this);
     return segs;
